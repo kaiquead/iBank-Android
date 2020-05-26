@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AnAccountActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boas vindas,"
+        android:textColor="@color/textWhite"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/textWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tvAccountLoadAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/textWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvValueLoadAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/textWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvAccountLoadAccount"
+        app:layout_constraintTop_toBottomOf="@+id/tvAccountLoadAccount" />
+
+    <Button
+        android:id="@+id/btnWithdraw"
+        android:layout_width="86dp"
+        android:layout_height="92dp"
+        android:background="@android:color/transparent"
+        android:onClick="makeWithdraw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <Button
+        android:id="@+id/btnDeposit"
+        android:layout_width="86dp"
+        android:layout_height="94dp"
+        android:background="@android:color/transparent"
+        android:onClick="makeDeposit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnWithdraw" />
+
+    <Button
+        android:id="@+id/btnTransfer"
+        android:layout_width="87dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/transparent"
+        android:onClick="makeTransfer"
+        app:layout_constraintEnd_toEndOf="@+id/btnDeposit"
+        app:layout_constraintStart_toStartOf="@+id/btnWithdraw"
+        app:layout_constraintTop_toBottomOf="@+id/btnWithdraw" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57"
+        app:srcCompat="@drawable/botaozinho" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sacar"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="55dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/saque_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/botaozinho" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/botaozinho" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Depositar"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnDeposit"
+        app:layout_constraintStart_toStartOf="@+id/btnDeposit"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="58dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnTransfer"
+        app:layout_constraintStart_toStartOf="@+id/btnTransfer"
+        app:layout_constraintTop_toTopOf="@+id/btnTransfer"
+        app:srcCompat="@drawable/transferencia_24dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transferir"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnTransfer"
+        app:layout_constraintStart_toStartOf="@+id/btnTransfer"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnDeposit"
+        app:layout_constraintStart_toStartOf="@+id/btnDeposit"
+        app:layout_constraintTop_toTopOf="@+id/btnDeposit"
+        app:srcCompat="@drawable/depositar_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">iBank-Android</string>
+    <string name="title_login">iBank</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+</resources>
